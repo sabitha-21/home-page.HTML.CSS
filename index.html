@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+        }
+        header .logo {
+            font-size: 1.2em;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: red;
+        }
+        .hero {
+            background-color: yellow;
+            padding: 50px;
+            text-align: center;
+            font-size: 1.5em;
+            color: black;
+        }
+        .about-us, .services, .products, .contact-us, .note {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+        }
+        .image-placeholder {
+            background-color: pink;
+            padding: 20px;
+            text-align: center;
+            margin: 10px 0;
+            color: #333;
+        }
+        .service-images, .product-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-images .image-placeholder, .product-images .image-placeholder {
+            flex: 1 1 30%;
+            margin: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 5px 0;
+        }
+        form input, form textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        form button {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: red;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            color: white;
+        }
+        .note {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .note ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Download and upload any logo</div>
+        <nav>
+            <ul>
+                <li><a href="service.jpg">Home</a></li>
+                <li><a href="fkjsd.jpg">About Us</a></li>
+                <li><a href="gjrfg.png">Services</a></li>
+                <li><a href="jgirkg.png">Products</a></li>
+                <li><a href="gjf.png">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Download and Upload</h1>
+         
+        </section>
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum a suscipit consectetur, ipsum id totam? Non nihil modi maxime distinctio, repellat voluptas ratione impedit, libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum a suscipit consectetur, ipsum id totam?</p>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/600x400" alt="About Us Image">
+            </div>
+        </section>
+        <section class="services">
+            <h2>Services</h2>
+            <div class="service-images">
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/300x200" alt="Service Image 01">
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/300x200" alt="Service Image 02">
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/300x200" alt="Service Image 03">
+                </div>
+            </div>
+            <a href="#">Click Here for more services</a>
+        </section>
+        <section class="products">
+            <h2>Products</h2>
+            <div class="product-images">
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/300x200" alt="Product Image 01">
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/300x200" alt="Product Image 02">
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/300x200" alt="Product Image 03">
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/300x200" alt="Product Image 04">
+                </div>
+            </div>
+            <a href="#">Click Here for more products</a>
+        </section>
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+                <label for="requirement">Requirement:</label>
+                <textarea id="requirement" name="requirement"></textarea>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </section>
+    </main>
+   
+    </section>
+</body>
+</html>
